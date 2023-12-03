@@ -153,7 +153,6 @@ int main(){
     duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
     cout << "The result for Part2 is  "<< res2 << " : " << (float)duration.count()/1000 << " miliseconds" << std::endl;
 
-
     return 0;
 }
 

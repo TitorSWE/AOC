@@ -11,3 +11,4 @@ Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz   2.11 GHz -- 16 Go RAM
 | 3   | 23.091 ms | 24.393 ms |
 | 4   | 6.371 ms | 11.231 ms |
 | [5](./05/README.md)   | 3.736 ms | 25.586 ms |
+| 6   | 0,022 ms | 0,023 ms|

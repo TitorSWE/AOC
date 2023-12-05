@@ -63,6 +63,16 @@ long Location(long location, vector<vector<long>> destionationSourceRange){
     return location;
 }
 
+long reciproque(long breaking, vector<vector<long>> listDestionationSourceRange){
+    for (vector<long> line : listDestionationSourceRange){
+        long destination = line[0];
+        long source = line[1];
+        long range = line[2];
+        if (breaking>=destination && breaking < destination + range) return breaking - destination + source;
+    }
+    return breaking;
+}
+
 long Part1(string fileContent){
     vector<long> locations;
     vector<string> splittedInput = splitString(fileContent, "\n\n");
@@ -88,15 +98,6 @@ long Part1(string fileContent){
     return minLocation;
 }
 
-long reciproque(long breaking, vector<vector<long>> listDestionationSourceRange){
-    for (vector<long> line : listDestionationSourceRange){
-        long destination = line[0];
-        long source = line[1];
-        long range = line[2];
-        if (breaking>=destination && breaking < destination + range) return breaking - destination + source;
-    }
-    return breaking;
-}
 
 long Part2(string fileContent){
     vector<long> locations;
@@ -132,7 +133,7 @@ long Part2(string fileContent){
         for (long breaking: breaks[k+1]) breaks[k].insert(reciproque(breaking, listDestionationSourceRange[k]));
     }
 
-    // Conputing
+    // Finding minimum amoung breaks
     long location;
     long newLocation;
     long minLocation = 0;

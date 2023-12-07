@@ -99,7 +99,7 @@ int Part2(string fileContent){
 }
 
 int main(){
-    cout << "--- DAY 05 ---" << "\n";
+    cout << "--- DAY 06 ---" << "\n";
     // Part 1
     string fileName = "input-6-1.txt";
     string fileContent1 = Input(fileName);

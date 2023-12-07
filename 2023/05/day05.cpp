@@ -161,6 +161,7 @@ long Part2(string fileContent){
 
 }
 
+
 int main(){
     cout << "--- DAY 05 ---" << "\n";
     // Part 1
